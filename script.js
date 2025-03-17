@@ -1,8 +1,8 @@
 	function daysofAYear(params) {
-		if(params % 4 == 0){
+		if(params % 4 === 0){
 		params % 100 == 0;
 		params % 400 == 0;
-		console.log("366")
+		console.log(366)
 			return 366;
 	}
      else{
