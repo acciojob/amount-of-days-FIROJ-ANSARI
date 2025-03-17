@@ -2,11 +2,11 @@
 		if(params % 4 == 0){
 		params % 100 == 0;
 		params % 400 == 0;
-		console.log("Leap year")
-			return LeapYear
+		console.log("366")
+			return 366;
 	}
      else{
-		return notleapyear 
+		return 365;
 	 }
 	}
 console.log(daysOfAYear(2022))
