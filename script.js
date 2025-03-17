@@ -1,21 +1,15 @@
-	function daysofAYear(params) {
-		if(params % 400 == 0){
-		console.log("Leap Year");
-			return 366;
-	}
-		else if (params % 100 == 0) {
-			console.log("Not Leap Year");
-			return 365;
-		}
-		else if (params % 4 == 0) {
-			console.log("Leap Year");
-				return 366;
-		}
-		else{
-			console.log("Not Leap Year")
-		}
-		
-console.log(daysOfAYear(2022))
-console.log(daysOfAYear(2024))
-console.log(daysOfAYear(1900))
-console.log(daysOfAYear(2000))
+	function daysOfAYear(year) {
+    // Leap year check: divisible by 4, not divisible by 100 unless divisible by 400
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return 366;
+    } else {
+        return 365;
+    }
+}
+
+// Example usage
+console.log(daysOfAYear(2022)); // 365
+console.log(daysOfAYear(2024)); // 366
+console.log(daysOfAYear(1900)); // 365
+console.log(daysOfAYear(2000)); // 366
+
